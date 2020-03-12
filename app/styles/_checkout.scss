@@ -1,0 +1,101 @@
+.checkout-container {
+	background-color: $bg;
+	max-width: 1000px;
+	padding: 20px 30px;
+
+	h2 {
+		position: relative;
+		font-size: 19px;
+		font-weight: bold;
+		line-height: 1;
+		padding-bottom: 10px;
+
+		span {
+			position: absolute;
+			top: 0;
+			left: -25px;
+			background-color: $text-primary;
+			color: white;
+			border-radius: 50%;
+			font-size: 18px;
+			text-align: center;
+			width: 22px;
+			height: 22px;
+			line-height: 1.15;
+		}
+	}
+
+	button {
+		display: block;
+		background-color: $green;
+		color: white;
+		font-weight: bold;
+		font-size: 18px;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+.order-container {
+	background-color: white;
+	padding: 20px;
+	margin: 41px 5px 0;
+	align-self: baseline;
+
+	p {
+		font-size: 16px;
+
+		&.total {
+			font-size: 24px;
+			font-weight: bold;
+		}
+	}
+}
+
+.input-container {
+	flex: 1;
+	background-color: white;
+	margin: 5px;
+	padding: 5px;
+
+	label,
+	input,
+	select {
+		display: block;
+		width: 100%;
+	}
+
+	label {
+		font-weight: bold;
+		font-size: 16px;
+		padding-bottom: 3px;
+	}
+
+	input,
+	select {
+		border: none;
+		font-size: 18px;
+
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+.row {
+	display: flex;
+
+	&.separate {
+		justify-content: space-between;
+	}
+}
+
+.row-line {
+	border-bottom: 1px dashed $text-primary;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.mt-m {
+	margin-top: 15px;
+}
